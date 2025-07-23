@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEGAN BODY CARE - Traditional Siddha Medicine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://as2.ftcdn.net/v2/jpg/09/38/09/15/1000_F_938091541_YZDMn753s4Jj1cXGvqLNfF2e5MoxPW53.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AEGAN BODY CARE - Traditional Siddha Medicine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-green-800 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-leaf text-2xl text-green-300"></i>
+        <h1 class="text-xl md:text-2xl font-bold">AEGAN BODY CARE</h1>
+      </div>
+
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-green-300 transition">Home</a>
+        <a href="#products" class="hover:text-green-300 transition">Products</a>
+        <a href="#about" class="hover:text-green-300 transition">About</a>
+        <a href="#testimonials" class="hover:text-green-300 transition">Testimonials</a>
+        <a href="#contact" class="hover:text-green-300 transition">Contact</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <button class="relative text-xl" id="cart-btn">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center" id="cart-count">0</span>
+        </button>
+
+        <!-- Show user's name here -->
+        <span id="user-display" class="hidden md:block bg-green-600 text-white px-4 py-2 rounded-full text-sm transition"></span>
+
+        <!-- Logout button -->
+        <button id="logout-btn" class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700">Logout</button>
+
+        <button class="md:hidden text-xl" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Traditional Siddha Medicine & Varma Massage</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Ancient healing for modern wellness. Experience the power of nature's remedies.</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#products" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition">Our Products</a>
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-green-800 px-8 py-3 rounded-full font-semibold transition">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+   <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Doctor Introduction -->
+            <div class="flex flex-col md:flex-row items-center mb-12 bg-green-50 p-6 rounded-lg">
+                <div class="md:w-1/3 mb-6 md:mb-0 md:pr-8 flex justify-center">
+                    <div class="w-48 h-48 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user-md text-6xl text-green-700"></i>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-2xl font-bold mb-4 text-green-800">Vanakkam! I am Dr. M.C. Senthil Kumar DSMS</h2>
+                    <p class="text-gray-700 mb-4">A dedicated Siddha practitioner with decades of experience in
+                        traditional medicine. My journey in health began with a deep-rooted passion for natural remedies
+                        and ancient healing practices passed down through generations.</p>
+                    <p class="text-gray-700 mb-4">Siddha medicine, one of the oldest medical systems, emphasizes
+                        holistic well-being, and I take pride in preserving this time-honored tradition. At my practice,
+                        I focus on treating a wide range of health conditions using 100% herbal medicines, ensuring safe
+                        and effective healing without side effects.</p>
+                    <p class="text-gray-700 mb-4">Over the years, I have successfully treated complicated health issues,
+                        earning the trust and gratitude of my patients. My goal is to provide personalized care,
+                        addressing the root cause of ailments rather than just symptoms, and guiding individuals toward
+                        enhanced health through the wisdom of Siddha medicine.</p>
+                    <p class="text-gray-700">I am here to assist you on your journey to well-being. Nandri!</p>
+                </div>
+            </div>
+
+            <h2 class="text-3xl font-bold text-center mb-4 text-green-800">Our Natural Remedies</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Handcrafted traditional medicines using ancient
+                Siddha formulations for holistic healing.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="spl orthooil.jpg" alt="Siddha Arthritis Relief Oil" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Special Ortho Oil 50ml</h3>
+                        <p class="text-gray-600 mb-4">Natural herbal oil for joint pain and inflammation relief.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-700">₹200</span>
+                            <button
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="skincare oil.jpg" alt="Siddha Arthritis Relief Oil" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Skincare Oil 50ml</h3>
+                        <p class="text-gray-600 mb-4">Natural oil used for itching and raches.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-700">₹250</span>
+                            <button
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="skincarelotion.jpg" alt="Siddha Arthritis Relief Oil" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Skin Lotion</h3>
+                        <p class="text-gray-600 mb-4">herbal lotion used for undereye pigmentation and black marks.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-700">₹350</span>
+                            <button
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="dandruff oil.jpg" alt="Siddha Arthritis Relief Oil" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Dandruff Oil 50ml</h3>
+                        <p class="text-gray-600 mb-4">removes dandruff and clenses the scalp.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-700">₹200</span>
+                            <button
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="spl hairoil.jpg" alt="Siddha Arthritis Relief Oil" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Special Hair Oil 100ml</h3>
+                        <p class="text-gray-600 mb-4">Improves hair growth within few days.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-700">₹350</span>
+                            <button
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="dryfig.jpg" alt="Siddha Arthritis Relief Oil" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Organic Dry Fig 400gm</h3>
+                        <p class="text-gray-600 mb-4">Organic dry fig supports digestion, boosts energy, and promotes
+                            healthy skin naturally.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-700">₹600</span>
+                            <button
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="imunity syrup.jpg" alt="Siddha Arthritis Relief Oil" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Immunity Syrup 500ml</h3>
+                        <p class="text-gray-600 mb-4">Helps to improve immunity and strength also gives relief from
+                            constipation.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-700">₹2500</span>
+                            <button
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="lungs care  powder.jpg" alt="Siddha Arthritis Relief Oil"
+                            class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Lungs Care Powder 50gm</h3>
+                        <p class="text-gray-600 mb-4">Treats asthma and lung based infections.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-700">₹800</span>
+                            <button
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="jeerana sangeevi.jpg" alt="Siddha Arthritis Relief Oil" class="h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-green-800">Jeerana Sanjeevi 50gm</h3>
+                        <p class="text-gray-600 mb-4">Enhances digestion and reliefs from gastric issues.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-700">₹800</span>
+                            <button
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div
+                    class="product-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 transition duration-300">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <img src="weightloss.jpg" alt="Siddha Arthritis Relief Oil" class="h-full object-contain">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-green-800">Weight Loss Powder 250gm</h3>
+                    <p class="text-gray-600 mb-4">reduces weight within months.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-green-700">₹1250</span>
+                        <button
+                            class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">Add
+                            to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-green-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://t4.ftcdn.net/jpg/01/19/97/35/240_F_119973530_IwoIf2SUdY6UffaNviRU8wWzLbw4h1mp.jpg" alt="Siddha Medicine" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 text-green-800">About AEGAN BODY CARE</h2>
+                    <p class="text-gray-700 mb-4">AEGAN BODY CARE is dedicated to preserving and promoting the ancient wisdom of Siddha medicine, one of India's oldest traditional healing systems. Our remedies are prepared using time-tested formulations passed down through generations of Siddha practitioners.</p>
+                    <p class="text-gray-700 mb-4">All our products are made from 100% natural herbs, roots, and minerals, carefully selected for their therapeutic properties. We follow traditional preparation methods to ensure maximum potency and effectiveness.</p>
+                    <p class="text-gray-700 mb-6">In addition to our herbal products, we offer specialized Varma massage therapy, an ancient healing technique that works on vital energy points to restore balance and promote wellness.</p>
+                    <div class="bg-green-100 border-l-4 border-green-600 p-4">
+                        <p class="text-green-800 font-semibold">"Health is not merely the absence of disease, but the perfect balance of body, mind and spirit." - Siddha Philosophy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-green-800">What Our Customers Say</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Real experiences from people who have benefited from our traditional remedies.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-green-700 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Rajesh Kumar</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Siddha Arthritis Relief Oil has transformed my life. After years of knee pain, I can now walk comfortably. The results were visible within 3 weeks of regular use."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-green-700 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Priya Venkat</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Varma massage therapy relieved my chronic back pain when nothing else worked. Mrs. Bindhu's expertise in pressure points is remarkable. Highly recommended!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-green-700 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Meena Sundar</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Sleep Wellness Syrup has helped me overcome years of insomnia without any side effects. I wake up refreshed now. The natural taste is pleasant too."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-green-800 text-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-6">📞 Contact Us</h2>
+    <p class="text-center text-green-100 mb-12 max-w-2xl mx-auto">
+      Reach out for consultations, appointments, or any product-related questions. We’re here to help you.
+    </p>
+
+    <div class="flex flex-col md:flex-row gap-10">
+      <!-- Left Info Column -->
+      <div class="md:w-1/2 space-y-8">
+        <div class="bg-green-700 bg-opacity-50 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-4">🏥 Clinic Address</h3>
+          <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> No.20/16, Soorathamman Koil 1st Street</p>
+          <p class="mb-2"><i class="fas fa-city mr-2"></i> Srinivasa Nagar, Perungalathur</p>
+          <p><i class="fas fa-map-pin mr-2"></i> Chennai - 600063, Tamil Nadu</p>
+        </div>
+
+        <div class="bg-green-700 bg-opacity-50 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-4">📱 Contact Details</h3>
+          <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> 7667333776 / 18072864906 / 18870970037</p>
+          <p class="mb-2"><i class="fab fa-whatsapp mr-2"></i> 
+            <a href="https://wa.me/919962536660" target="_blank" class="underline hover:text-green-300">Chat on WhatsApp (9962536660)</a>
+          </p>
+          <p><i class="fas fa-envelope mr-2"></i> aegancare@gmail.com</p>
+        </div>
+
+        <div class="bg-green-700 bg-opacity-50 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-4">⏰ Consultation Hours</h3>
+          <p><i class="fas fa-clock mr-2"></i> Daily: 7:00 PM – 9:00 PM</p>
+        </div>
+
+        <div class="bg-green-700 bg-opacity-50 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-4">👩‍⚕️ For Appointments</h3>
+          <p class="mb-2"><i class="fas fa-user-md mr-2"></i> Mrs. Bindhu Sasikumar</p>
+          <p class="mb-2"><i class="fas fa-mobile-alt mr-2"></i> 9962536660</p>
+          <p><i class="fas fa-envelope mr-2"></i> binsas81@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Right Form Column -->
+      <div class="md:w-1/2">
+        <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold mb-6 text-green-700">✉️ Send Us a Message</h3>
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+              <input type="text" id="name" placeholder="e.g., John Doe"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+              <input type="email" id="email" placeholder="you@example.com"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+            </div>
+            <div class="mb-4">
+              <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+              <input type="tel" id="phone" placeholder="e.g., 9876543210"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+            </div>
+            <div class="mb-4">
+              <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+              <select id="subject"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+                <option value="">-- Select a Subject --</option>
+                <option value="product">Product Inquiry</option>
+                <option value="appointment">Book Appointment</option>
+                <option value="consultation">Health Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+              <textarea id="message" rows="4" placeholder="Type your message here..."
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md font-semibold transition">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-leaf text-2xl text-green-400"></i>
+                        <h2 class="text-xl font-bold">AEGAN BODY CARE</h2>
+                    </div>
+                    <p class="text-gray-400 mt-2">Traditional Siddha Medicine & Varma Massage</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-whatsapp text-xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 AEGAN BODY CARE. All Rights Reserved.</p>
+                <p class="mt-2">Traditional Siddha Medicine and Varma Massage Center</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login/Signup Modal -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firebase Auth Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Buttons -->
+  <div class="p-4 flex gap-4">
+    <button id="login-btn" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700">Login</button>
+    <button id="logout-btn" class="hidden bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700">Logout</button>
+  </div>
+
+  <!-- Login/Signup Modal -->
+  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="auth-modal">
+    <div class="bg-white rounded-lg shadow-xl w-full max-w-md relative">
+      <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">✕</button>
+      <div class="p-8">
+        <div class="flex mb-8 border-b" id="auth-tabs">
+          <button id="login-tab" class="px-4 pb-2 font-medium text-green-700 border-b-2 border-green-700">Login</button>
+          <button id="signup-tab" class="px-4 pb-2 font-medium text-gray-500">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form" class="space-y-4">
+          <div>
+            <label for="login-email" class="block mb-2">Email</label>
+            <input type="email" id="login-email" class="w-full px-4 py-2 border rounded-lg">
+          </div>
+          <div>
+            <label for="login-password" class="block mb-2">Password</label>
+            <input type="password" id="login-password" class="w-full px-4 py-2 border rounded-lg">
+          </div>
+          <button id="login-submit" type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">Login</button>
+        </form>
+
+        <!-- Sign Up Form -->
+        <form id="signup-form" class="space-y-4 hidden">
+          <div>
+            <label for="signup-name" class="block mb-2">Full Name</label>
+            <input type="text" id="signup-name" class="w-full px-4 py-2 border rounded-lg">
+          </div>
+          <div>
+            <label for="signup-email" class="block mb-2">Email</label>
+            <input type="email" id="signup-email" class="w-full px-4 py-2 border rounded-lg">
+          </div>
+          <div>
+            <label for="signup-password" class="block mb-2">Password</label>
+            <input type="password" id="signup-password" class="w-full px-4 py-2 border rounded-lg">
+          </div>
+          <button id="signup-submit" type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK and your script -->
+  <script type="module" src="login.js" defer></script>
+  <script type="module" src="llogin2.js"></script>
+
+</body>
+</html>
+
+
+
+    <!-- Cart Sidebar -->
+    <div class="fixed inset-y-0 right-0 w-full md:w-96 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50" id="cart-sidebar">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-between items-center p-4 border-b">
+                <h3 class="text-lg font-semibold">Your Cart (<span id="sidebar-cart-count">0</span>)</h3>
+                <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="flex-1 overflow-y-auto p-4 space-y-4" id="cart-items-container">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="border-t p-4">
+                <div class="flex justify-between mb-4">
+                    <span class="font-semibold">Total:</span>
+                    <span class="font-bold" id="cart-total">₹0</span>
+                </div>
+                <button id="checkout-btn" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/7305465603" class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-700 transition z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Contact form handler
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will contact you soon.');
+                this.reset();
+            });
+        }
+
+        // Authentication System
+        const authModal = document.getElementById('auth-modal');
+        const loginBtn = document.getElementById('login-btn');
+        const closeModal = document.getElementById('close-modal');
+        const loginTab = document.getElementById('login-tab');
+        const signupTab = document.getElementById('signup-tab');
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+
+        // Show auth modal
+        loginBtn.addEventListener('click', () => {
+            authModal.classList.remove('hidden');
+        });
+
+        // Close auth modal
+        closeModal.addEventListener('click', () => {
+            authModal.classList.add('hidden');
+        });
+
+        // Switch between login/signup tabs
+        loginTab.addEventListener('click', () => {
+            loginTab.classList.add('text-green-700', 'border-green-700');
+            loginTab.classList.remove('text-gray-500');
+            signupTab.classList.add('text-gray-500');
+            signupTab.classList.remove('text-green-700', 'border-green-700');
+            loginForm.classList.remove('hidden');
+            signupForm.classList.add('hidden');
+        });
+
+        signupTab.addEventListener('click', () => {
+            signupTab.classList.add('text-green-700', 'border-green-700');
+            signupTab.classList.remove('text-gray-500');
+            loginTab.classList.add('text-gray-500');
+            loginTab.classList.remove('text-green-700', 'border-green-700');
+            signupForm.classList.remove('hidden');
+            loginForm.classList.add('hidden');
+        });
+
+        // Form submissions (simplified for demo)
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // In a real app, you would authenticate with your backend
+            alert('Login successful!');
+            authModal.classList.add('hidden');
+            loginBtn.textContent = 'My Account';
+        });
+
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // In a real app, you would register with your backend
+            alert('Account created successfully! Please login.');
+            loginTab.click();
+        });
+
+        // Shopping Cart System
+        let cart = [];
+        
+        // DOM elements
+        const cartBtn = document.getElementById('cart-btn');
+        const cartCount = document.getElementById('cart-count');
+        const closeCart = document.getElementById('close-cart');
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const cartItemsContainer = document.getElementById('cart-items-container');
+        const sidebarCartCount = document.getElementById('sidebar-cart-count');
+        const cartTotal = document.getElementById('cart-total');
+        const checkoutBtn = document.getElementById('checkout-btn');
+
+        // Add to cart buttons
+        document.querySelectorAll('.product-card button').forEach(button => {
+            button.addEventListener('click', () => {
+                const productCard = button.closest('.product-card');
+                const productName = productCard.querySelector('h3').textContent;
+                const productPrice = parseInt(productCard.querySelector('span').textContent.replace('₹', ''));
+                
+                // Check if product already in cart
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({
+                        name: productName,
+                        price: productPrice,
+                        quantity: 1
+                    });
+                }
+                
+                updateCart();
+            });
+        });
+
+        // Cart toggle
+        cartBtn.addEventListener('click', () => {
+            cartSidebar.classList.remove('translate-x-full');
+        });
+
+        closeCart.addEventListener('click', () => {
+            cartSidebar.classList.add('translate-x-full');
+        });
+
+        // Update cart display
+        function updateCart() {
+            // Update cart count
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCount.textContent = totalItems;
+            sidebarCartCount.textContent = totalItems;
+            
+            // Update cart items
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+            
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                
+                const itemEl = document.createElement('div');
+                itemEl.className = 'flex justify-between items-center border-b pb-4';
+                itemEl.innerHTML = `
+                    <div>
+                        <h4 class="font-medium">${item.name}</h4>
+                        <div class="flex items-center mt-1 space-x-4">
+                            <button class="text-gray-500 hover:text-green-600 quantity-btn" data-action="decrease" data-name="${item.name}">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="font-medium">${item.quantity}</span>
+                            <button class="text-gray-500 hover:text-green-600 quantity-btn" data-action="increase" data-name="${item.name}">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span class="font-semibold">₹${itemTotal}</span>
+                `;
+                cartItemsContainer.appendChild(itemEl);
+            });
+            
+            // Update total
+            cartTotal.innerHTML = `&#8377;${total}`;
+            
+            // Add event listeners to quantity buttons
+            document.querySelectorAll('.quantity-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const action = button.dataset.action;
+                    const productName = button.dataset.name;
+                    const item = cart.find(item => item.name === productName);
+                    
+                    if (action === 'increase') {
+                        item.quantity += 1;
+                    } else {
+                        if (item.quantity > 1) {
+                            item.quantity -= 1;
+                        } else {
+                            cart = cart.filter(i => i.name !== productName);
+                        }
+                    }
+                    
+                    updateCart();
+                });
+            });
+        }
+
+        // Checkout with Razorpay
+        checkoutBtn.addEventListener('click', () => {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+
+            const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.quantity * 100), 0);
+            
+            const options = {
+                key: 'YOUR_RAZORPAY_API_KEY', // Replace with your actual API key
+                amount: totalAmount,
+                currency: 'INR',
+                name: 'AEGAN BODY CARE',
+                description: 'Purchase of Siddha Products',
+                image: '/logo.png',
+                handler: function(response) {
+                    alert('Payment successful! Order ID: ' + response.razorpay_payment_id);
+                    cart = [];
+                    updateCart();
+                    cartSidebar.classList.add('translate-x-full');
+                },
+                prefill: {
+                    name: 'Customer Name',
+                    email: 'customer@example.com',
+                    contact: '9999999999'
+                },
+                theme: {
+                    color: '#059669' // Green color matching your theme
+                }
+            };
+            
+            const rzp = new Razorpay(options);
+            rzp.open();
+        });
+    </script>
+  <script type="module">
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBAtZvwFh66M2s_RiPFNCgyqXXx5mYFgdM",
+      authDomain: "loginpage-26ca2.firebaseapp.com",
+      projectId: "loginpage-26ca2",
+      storageBucket: "loginpage-26ca2.appspot.com",
+      messagingSenderId: "187032456616",
+      appId: "1:187032456616:web:aa0bc8661b4d925641a19d"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    const userDisplay = document.getElementById("user-display");
+    const logoutBtn = document.getElementById("logout-btn");
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const name = user.displayName || user.email.split('@')[0];
+        userDisplay.textContent = name;
+        userDisplay.classList.remove("hidden");
+      } else {
+        window.location.href = "web.html"; // If not logged in, redirect
+      }
+    });
+
+    logoutBtn.addEventListener("click", () => {
+      signOut(auth)
+        .then(() => {
+          alert("Logged out");
+          window.location.href = "web.html";
+        })
+        .catch((error) => {
+          console.error("Logout error:", error.message);
+        });
+    });
+  </script>
+  
+</body>
+</html>
